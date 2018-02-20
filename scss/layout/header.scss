@@ -1,0 +1,53 @@
+header{
+    background: url(../img/blue-beetle.jpg), rgba(255,255,255, .20);
+    background-blend-mode: lighten; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+}
+
+.logo{
+    padding: 0;
+    margin: 0;
+
+}
+.logo img {
+   width: 100vw;
+   position: absolute;
+   left: 0;
+   top: 0;
+   padding-top: 4em;
+   @media(min-width:650px){
+       width: 650px;
+       padding-top:2em;
+   }
+   @media(min-width: 1300px){
+       width:50vw;
+       padding-top: 0;
+   }
+}
+nav {
+    width: 100vw;
+    z-index: 10;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    float: right;
+    @media(min-width:825px){
+        font-size: 1.3em;
+    }
+    
+    
+}
+li{
+    padding: 1em;
+    a{
+    color: black;
+    text-decoration: none;
+    
+    }
+}

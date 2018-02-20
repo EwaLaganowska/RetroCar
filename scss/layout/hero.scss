@@ -1,0 +1,39 @@
+
+.about{
+    color: $white;
+    background: rgba(0, 0, 0, 0.678);
+    padding: 1.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 90vw;
+    z-index: 10;
+    .title{
+        font-family: $font-title;
+        font-size: 1.5em;
+        margin-top:0;
+        @media(min-width:825px){
+            font-size: 2em;
+        }
+    }  
+    @media(min-width: 825px){
+        width: 44vw;
+        position: absolute;
+        margin-top:-2em;
+        padding: 2.5em;
+        margin-left: 1em;
+        .text{
+            font-size: 1.2em;
+        }
+    } 
+}
+.red-car{
+    width: 100vw;
+   height: 100vh;
+   background-image: url(../img/red-beetle.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+}
