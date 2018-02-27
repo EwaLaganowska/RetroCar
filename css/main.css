@@ -19,6 +19,10 @@ body {
   position: relative;
 }
 
+body {
+  letter-spacing: .5mm;
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -486,22 +490,24 @@ template {
 .about .title {
   font-family: "Lobster", cursive;
   font-size: 1.5em;
-  margin-top: 0;
+  margin: 0;
 }
 
-@media (min-width: 825px) {
+@media (min-width: 870px) {
   .about .title {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 
-@media (min-width: 825px) {
+.about .text {
+  margin-top: 0;
+}
+
+@media (min-width: 870px) {
   .about {
-    width: 44vw;
-    position: absolute;
-    margin-top: -2em;
+    width: 62vw;
+    margin-top: 2em;
     padding: 2.5em;
-    margin-left: 1em;
   }
   .about .text {
     font-size: 1.2em;
@@ -515,6 +521,12 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 890px) {
+  .red-car {
+    height: 80vh;
+  }
 }
 
 header {
@@ -559,7 +571,7 @@ nav {
   z-index: 10;
 }
 
-ul {
+.unstyled-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,16 +580,199 @@ ul {
 }
 
 @media (min-width: 825px) {
-  ul {
+  .unstyled-list {
     font-size: 1.3em;
   }
 }
 
-li {
+.unstyled-list li {
   padding: 1em;
 }
 
-li a {
+.unstyled-list li a {
   color: black;
   text-decoration: none;
+}
+
+.offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.col6 {
+  width: 300px;
+  height: 300px;
+}
+
+.col6 img {
+  width: 200px;
+  height: auto;
+  padding: 1em;
+}
+
+.col6 p {
+  padding-top: 0;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 725px) {
+  .col6 img {
+    width: 150px;
+  }
+}
+
+.service {
+  background: -webkit-gradient(linear, left top, left bottom, from(#78e7e7), to(#f5a961));
+  background: -webkit-linear-gradient(#78e7e7, #f5a961);
+  background: -o-linear-gradient(#78e7e7, #f5a961);
+  background: linear-gradient(#78e7e7, #f5a961);
+  padding: 2em;
+}
+
+.service .center {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.service .center h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 1em;
+  padding: .5em;
+  border: 1px solid black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 232px;
+  outline: 2px solid black;
+  outline-offset: 10px;
+}
+
+.col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  .col1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.col1 .col2 {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 1em;
+  margin: 2vw;
+  max-width: 500px;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col1 .list {
+  list-style: circle;
+  width: 40vw;
+  text-align: left;
+}
+
+@media (max-width: 650px) {
+  .col1 .list {
+    width: 80vw;
+  }
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.418);
+  background-image: url(../img/inside.jpg);
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  position: relative;
+}
+
+footer p {
+  padding: 0 2em;
+}
+
+footer h1 {
+  padding-top: 2em;
+  margin-top: 0;
+  font-size: 3em;
+}
+
+footer .contact {
+  padding-bottom: 4em;
+}
+
+footer .nav {
+  background: black;
+  padding: 1em;
+  letter-spacing: 4em;
+}
+
+footer .nav p {
+  color: gray;
+  letter-spacing: 2px;
+}
+
+footer .nav a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .nav a:hover, footer .nav a:focus {
+  color: gray;
+}
+
+@media (min-width: 750px) {
+  footer .row {
+    display: inline-table;
+    width: 45vw;
+    padding-bottom: 2em;
+  }
+  footer .nav {
+    width: 100vw;
+    padding: 0 3em 0 0;
+    display: inline-block;
+  }
+  footer .left {
+    float: left;
+  }
+  footer .right {
+    float: right;
+    padding: 1em;
+  }
 }

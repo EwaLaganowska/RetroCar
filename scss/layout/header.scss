@@ -33,21 +33,19 @@ nav {
     z-index: 10;
 }
 
-ul{
+.unstyled-list{
     display: flex;
     list-style: none;
     float: right;
     @media(min-width:825px){
         font-size: 1.3em;
     }
-    
-    
-}
-li{
-    padding: 1em;
-    a{
-    color: black;
-    text-decoration: none;
-    
+    li{
+        padding: 1em;
+        a{
+        color: black;
+        text-decoration: none;
+        
+        }
     }
 }
