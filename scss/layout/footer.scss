@@ -51,8 +51,9 @@ footer{
             
         }
         .nav {
-            width: 100vw;
-            padding: 0 3em 0 0;
+            width: 100%;
+            padding: 0;
+            margin: 0;
             display: inline-block;
             
         }
@@ -61,7 +62,8 @@ footer{
         }
         .right{
             float: right;
-            padding:  1em;
+            padding-left:  1em;
+            padding-right: 0;
         }
             
     }

@@ -7,6 +7,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
+    margin-bottom: 20%;
     width: 90vw;
     z-index: 10;
     .title{
@@ -33,7 +34,7 @@
 }
 .red-car{
     width: 100vw;
-   height: 100vh;
+   height: auto;
    background-image: url(../img/red-beetle.jpg);
    background-repeat: no-repeat;
    background-size: cover;
